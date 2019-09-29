@@ -134,6 +134,10 @@
     
     
 }
+-(void)dealloc{
+    [self.timer invalidate];
+    self.timer = nil;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
