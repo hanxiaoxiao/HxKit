@@ -10,7 +10,8 @@
 #import <MessageUI/MessageUI.h>
 #import "HxActivityKit.h"
 #import "HxScanCodeView.h"
-@interface ViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate,HxScanCodeDelegate>
+#import "HxSpeechSynthesizer.h"
+@interface ViewController ()<MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate,HxScanCodeDelegate,HxSpeechSynthesizerDelegate>
 
 @end
 
@@ -19,18 +20,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+
 }
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
 //    if ([HxActivityKit shareInstance].isStepCountingAvailable) {
 //        NSLog(@"%@",[HxActivityKit shareInstance].getNumberOfSteps);
 //    }
-    HxScanCodeView* scv = [[HxScanCodeView alloc]initWithFrame:self.view.bounds];
-    scv.delegate = self;
+//    HxScanCodeView* scv = [[HxScanCodeView alloc]initWithFrame:self.view.bounds];
+//    scv.delegate = self;
+//
+//    [self.view addSubview:scv];
     
-    [self.view addSubview:scv];
+    HxSpeechSynthesizer *speech = [HxSpeechSynthesizer shareInstance];
+    
+    [speech speakingToWord];
+    
+    speech.delegate = self;
     
 }
+-(void)getSpeechToWord:(NSString *)word{
+    NSLog(@"word:%@",word);
+}
+
 #pragma mark --HxScanCodeDelegate--
 -(void)dataString:(NSString*)StringValue
 {

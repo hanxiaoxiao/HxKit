@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BB1860AB2330D02A0089ED2C /* HxActivityKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1860AA2330D02A0089ED2C /* HxActivityKit.m */; };
+		BB32135F2380E0A800B6D0DC /* HxSpeechSynthesizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BB32135E2380E0A800B6D0DC /* HxSpeechSynthesizer.m */; };
+		BB3213622380F93600B6D0DC /* 新录音02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BB3213612380F93600B6D0DC /* 新录音02.m4a */; };
 		BB667BF623224C1400DF72EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB667BF523224C1400DF72EF /* AppDelegate.m */; };
 		BB667BF923224C1400DF72EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB667BF823224C1400DF72EF /* ViewController.m */; };
 		BB667BFC23224C1400DF72EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB667BFA23224C1400DF72EF /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 /* Begin PBXFileReference section */
 		BB1860A92330D02A0089ED2C /* HxActivityKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HxActivityKit.h; sourceTree = "<group>"; };
 		BB1860AA2330D02A0089ED2C /* HxActivityKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HxActivityKit.m; sourceTree = "<group>"; };
+		BB32135D2380E0A800B6D0DC /* HxSpeechSynthesizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HxSpeechSynthesizer.h; sourceTree = "<group>"; };
+		BB32135E2380E0A800B6D0DC /* HxSpeechSynthesizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HxSpeechSynthesizer.m; sourceTree = "<group>"; };
+		BB3213612380F93600B6D0DC /* 新录音02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "新录音02.m4a"; sourceTree = "<group>"; };
 		BB667BF123224C1400DF72EF /* HxKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HxKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB667BF423224C1400DF72EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB667BF523224C1400DF72EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 				BB667BF723224C1400DF72EF /* ViewController.h */,
 				BB667BF823224C1400DF72EF /* ViewController.m */,
 				BB667BFA23224C1400DF72EF /* Main.storyboard */,
+				BB3213612380F93600B6D0DC /* 新录音02.m4a */,
 				BB667BFD23224C1500DF72EF /* Assets.xcassets */,
 				BB667BFF23224C1500DF72EF /* LaunchScreen.storyboard */,
 				BB667C0223224C1500DF72EF /* Info.plist */,
@@ -79,6 +85,8 @@
 				BBCE27E7233EFFEE003008D1 /* HxScanCodeView.h */,
 				BBCE27E8233EFFEE003008D1 /* HxScanCodeView.m */,
 				BBCE27EA233F46D4003008D1 /* PrefixHeader.pch */,
+				BB32135D2380E0A800B6D0DC /* HxSpeechSynthesizer.h */,
+				BB32135E2380E0A800B6D0DC /* HxSpeechSynthesizer.m */,
 			);
 			path = HxKit;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 				BB667C0123224C1500DF72EF /* LaunchScreen.storyboard in Resources */,
 				BB667BFE23224C1500DF72EF /* Assets.xcassets in Resources */,
 				BB667BFC23224C1400DF72EF /* Main.storyboard in Resources */,
+				BB3213622380F93600B6D0DC /* 新录音02.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB32135F2380E0A800B6D0DC /* HxSpeechSynthesizer.m in Sources */,
 				BB667BF923224C1400DF72EF /* ViewController.m in Sources */,
 				BB667C0423224C1500DF72EF /* main.m in Sources */,
 				BB667BF623224C1400DF72EF /* AppDelegate.m in Sources */,
